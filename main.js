@@ -18,7 +18,7 @@ console.log('le parole sono lunghe uguali');
 /* Il software deve chiedere per 10 volte all’utente di inserire un numero.
 Il programma stampa la somma di tutti i numeri inseriti. (modificato)  */
 
-var sequenzaNumerica = [];
+/* var sequenzaNumerica = [];
 
 for (var index = 0; index < 10; index++) {
    var num = prompt('inserisci un numero');
@@ -33,4 +33,20 @@ for (var i = 0; i < sequenzaNumerica.length; i++) {
     somma += Number(sequenzaNumerica[i]);
 }
 
-console.log(somma);
+console.log(somma); */
+
+
+/* In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa */
+
+var invitati = ['Andrea','Luca','Mario','Elisa','Karol','Pippo','Francesco','Berto'];
+
+var userName = prompt('inserisci il tuo nome');
+messaggio = 'non sei nell\'elenco';
+for (let index = 0; index < invitati.length; index++) {
+    if (userName==invitati[index]){
+        messaggio = 'Benvenuto, puoi partecipare alla festa';
+        
+    }
+    
+}
+ console.log(messaggio);
