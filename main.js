@@ -5,9 +5,11 @@ var parola1 = prompt('inserisci una parola');
 var parola2 = prompt('inserisci una parola diversa');
 
 if (parola1.length > parola2.length){
+    console.log(parola2);
     console.log(parola1);
 }else if (parola1.length == parola2.length) {
 console.log('le parole sono lunghe uguali');
 } else {
+    console.log(parola1);
     console.log(parola2);
 }
