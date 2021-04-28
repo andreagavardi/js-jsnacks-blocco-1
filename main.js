@@ -55,7 +55,7 @@ for (let index = 0; index < invitati.length; index++) {
 Chiedi per 6 volte all’utente di inserire un numero,
 se è dispari inseriscilo nell’array.  */
 
-var sequenzaNumericaDispari = [];
+/* var sequenzaNumericaDispari = [];
 
 for (var index = 0; index < 6; index++) {
    var num = prompt('inserisci un numero');
@@ -64,4 +64,18 @@ for (var index = 0; index < 6; index++) {
     }
 }
 
-console.log(sequenzaNumericaDispari);
+console.log(sequenzaNumericaDispari); */
+
+/* Stampa il cubo dei primi N numeri,
+dove N è un numero indicato dall’utente. */
+
+
+var listaN = [];
+
+var N = parseInt(prompt('inserisci un numero'));
+
+for (let i = 0; i < N; i++) {
+    listaN[i]= Math.pow((i+1),3);
+    
+}
+console.log(listaN);
