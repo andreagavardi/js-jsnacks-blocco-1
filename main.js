@@ -70,7 +70,7 @@ console.log(sequenzaNumericaDispari); */
 dove N è un numero indicato dall’utente. */
 
 
-var listaN = [];
+/* var listaN = [];
 
 var N = parseInt(prompt('inserisci un numero'));
 
@@ -78,4 +78,11 @@ for (let i = 0; i < N; i++) {
     listaN[i]= Math.pow((i+1),3);
     
 }
-console.log(listaN);
+console.log(listaN); */
+
+var N = parseInt(prompt('inserisci un numero'));
+
+for (let i = 1; i <= N; i++) {
+     console.log(Math.pow(i,3));
+    
+}
