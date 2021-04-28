@@ -95,7 +95,7 @@ e calcola la somma di tutte le cifre che compongono il numero.  */
 
 do {
     var numUtente= prompt('inserisci un numero di 4 cifre');
-} while (numUtente.length != 4) ;
+} while (numUtente.length != 4 || (isNaN(parseInt(numUtente)))) ;
 
 
 somma=0;
