@@ -74,15 +74,33 @@ dove N è un numero indicato dall’utente. */
 
 var N = parseInt(prompt('inserisci un numero'));
 
-for (let i = 0; i < N; i++) {
+for (var i = 0; i < N; i++) {
     listaN[i]= Math.pow((i+1),3);
     
 }
 console.log(listaN); */
 
-var N = parseInt(prompt('inserisci un numero'));
+// codice più snello
+/* var N = parseInt(prompt('inserisci un numero'));
 
-for (let i = 1; i <= N; i++) {
+for (var i = 1; i <= N; i++) {
      console.log(Math.pow(i,3));
     
+} */
+
+
+/* Chiedi un numero di 4 cifre all’utente
+e calcola la somma di tutte le cifre che compongono il numero.  */
+
+
+do {
+    var numUtente= prompt('inserisci un numero di 4 cifre');
+} while (numUtente.length != 4) ;
+
+
+somma=0;
+for (let i = 0; i < numUtente.length; i++) {
+    
+    somma += parseInt(numUtente[i]);
 }
+console.log(somma);
