@@ -9,6 +9,26 @@ var Palla = {
 
 /* Attraverso un prompt dare la possibilità all’utente di modificare il peso della palla. */
 
-Palla.peso = Number(prompt('cambia il peso della palla'));
-console.log(Palla);
+//Palla.peso = Number(prompt('cambia il peso della palla'));
+//console.log(Palla);
 
+/* Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti proprietà: base e altezza.
+Calcolare perimetro e area.
+(ripassiamo il Teorema di Pitagora ;D ) */
+
+var TriangoloRettangolo = {
+    base: 10,
+    altezza: 10,
+}
+
+var ipotenusa_2 = Math.pow(TriangoloRettangolo.base,2) + Math.pow(TriangoloRettangolo.altezza,2);
+console.log(ipotenusa_2);
+TriangoloRettangolo.ipotenusa = Math.pow(ipotenusa_2, 0.5 );
+console.log(TriangoloRettangolo.ipotenusa);
+
+TriangoloRettangolo.perimetro = TriangoloRettangolo.base + TriangoloRettangolo.altezza + TriangoloRettangolo.ipotenusa;
+
+
+TriangoloRettangolo.area = (TriangoloRettangolo.base * TriangoloRettangolo.altezza) / 2;
+
+console.log(TriangoloRettangolo);
